@@ -1,0 +1,177 @@
+@media (max-width: 670px) {
+  .header-desktop {
+    visibility: hidden;
+  }
+
+  .header-mobile {
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    margin-left: 10px;
+    margin-top: 16px;
+  }
+
+  #logo-image {
+    margin-left: 25vw;
+    margin-top: 1vh;
+  }
+
+  /* Navigation menu */
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: var(--color-orange);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--color-white);
+    font-weight: bold;
+    font-family: "Nunito Sans";
+    display: block;
+    transition: 0.5s;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+
+  #main {
+    transition: margin-left 0.5s;
+    padding: 20px;
+  }
+
+  /* End Navigation */
+
+  /* Hero Section */
+  .hero-section {
+    margin-top: 14px;
+  }
+
+  .hero-section h2 {
+    margin: 0 4vw;
+    font-size: 24px;
+    line-height: 42px;
+  }
+
+  .hero-desc {
+    margin: 16px 4vw;
+  }
+
+  .hero-image img {
+    width: 100%;
+  }
+
+  .btn-cta {
+    justify-content: space-evenly;
+  }
+
+  /* Features-Section */
+  .features-item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  /* End Features Section */
+
+  /* Find Us Section */
+  .btn-find-us input {
+    margin: 10px 6px;
+    width: 160px;
+  }
+  /* End Find Us Section */
+
+  /* Footer */
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .footer-info {
+    display: block;
+  }
+  /* End Footer Section */
+}
+
+@media (min-width: 671px) {
+  .header-mobile {
+    visibility: hidden;
+  }
+
+  /* Hero Section */
+
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 120px;
+    height: 100%;
+  }
+
+  .hero-section h2 {
+    font-size: 45px;
+  }
+
+  .hero-desc {
+    font-size: 24px;
+    margin-right: 10vw;
+    line-height: 40px;
+  }
+
+  .btn-cta {
+    margin-top: 40px;
+  }
+
+  .btn-learnMore {
+    margin-left: 24px;
+  }
+
+  .features-section {
+    padding: 80px 120px;
+    align-items: center;
+    justify-content: space-between;
+    width: 83.5vw;
+  }
+
+  .features-section h3 {
+    line-height: 60px;
+  }
+
+  .feature-title {
+    margin-bottom: 50px;
+  }
+
+  .find-us {
+    width: 100vw;
+  }
+
+  /* Footer */
+  .footer-section {
+    margin: 20px 120px;
+  }
+
+  .footer-info p {
+    padding: 0 10px;
+  }
+}

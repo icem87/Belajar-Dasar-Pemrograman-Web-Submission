@@ -1,0 +1,219 @@
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-grey: #5c5555;
+  --color-orange: #ff5202;
+  --color-black: #1a1a1a;
+  --color-white: #ffffff;
+  --color-navypurple: #262543;
+}
+
+@font-face {
+  font-family: "LEMON-MILK";
+  src: url("/assets/font/LEMONMILK-BOLD.otf"); /* IE9 Compat Modes */
+  src: url("/assets/font/LEMONMILK-BOLD.otf") format("otf"), /* Modern Browsers */ url("/assets/font/LEMONMILK-BOLD.otf") format("truetype"); /* Safari, Android, iOS */
+}
+
+/* Nav Desktop */
+.header-desktop {
+  display: flex;
+  justify-content: space-between;
+  margin: -40px 120px;
+}
+
+.logo-deskop {
+  width: 160px;
+}
+
+.desktop-menu ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.desktop-menu ul li a {
+  text-decoration: none;
+  padding: 0 3vw;
+  color: var(--color-grey);
+  font-family: "Nunito Sans";
+  font-size: 16px;
+}
+
+.desktop-menu ul li a:hover {
+  color: var(--color-orange) !important;
+  font-weight: bold !important;
+}
+
+.btn {
+  padding: 20px 40px;
+  text-align: center;
+  font-family: "Nunito Sans";
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.btn:hover,
+.btn-learnMore:focus {
+  box-shadow: inset 12em 0 0 0 var(--color-orange);
+  border: solid 1px var(--color-orange);
+  color: var(--color-white);
+}
+
+.btn-getStarted:hover,
+.btn-getStarted:focus {
+  box-shadow: inset 12em 0 0 0 var(--color-white);
+  border: solid 1px var(--color-black);
+  color: var(--color-black);
+}
+
+.btn-signup {
+  background-color: var(--color-white);
+  border: solid 1px var(--color-black);
+  color: var(--color-black);
+}
+/* End Navbar Desktop */
+
+/* Hero Section */
+
+.hero-section h2 {
+  font-family: "LEMON-MILK";
+  color: var(--color-black);
+}
+
+.hero-desc {
+  color: var(--color-black);
+  font-family: "Nunito Sans";
+  font-weight: lighter;
+  border-color: var(--color-black);
+  border-style: solid;
+  border-width: 0 0 0 1px;
+  padding: 1px 0 1px 10px;
+}
+
+.btn-cta {
+  display: flex;
+}
+
+.btn-learnMore {
+  background-color: var(--color-white);
+  border: solid 1px var(--color-black);
+  color: var(--color-black);
+}
+
+.btn-getStarted {
+  background-color: var(--color-orange);
+  border: solid 1px var(--color-orange);
+  color: var(--color-white);
+}
+/* End Hero Section */
+
+/* Features Section */
+.features-section {
+  background-color: var(--color-navypurple);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.features-section h3 {
+  color: var(--color-white);
+  font-family: "Nunito Sans";
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.features-section h4 {
+  color: var(--color-white);
+  font-family: "Nunito Sans";
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.features-section p {
+  color: var(--color-white);
+  font-family: "Nunito Sans";
+  font-weight: lighter;
+  font-size: 18px;
+  text-align: center;
+  line-height: 28px;
+}
+
+.features-item img {
+  display: block;
+  width: 60px;
+  margin: 0 auto;
+}
+
+/* End Features Section */
+
+/* Find Us Section*/
+.find-us {
+  background-color: #232326;
+  font-family: "Space Grotesk", sans-serif;
+  text-align: center;
+  color: var(--color-white);
+  height: max-content;
+  padding: 4vh 0;
+}
+
+.find-us h3 {
+  font-size: 46px;
+  letter-spacing: 12px;
+}
+
+.btn-find-us {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-find-us input {
+  margin: 0 16px;
+  width: 160px;
+  transition: transform 250ms;
+}
+
+.btn-find-us input:hover {
+  transform: translateY(-10px);
+}
+
+.find-us p {
+  font-size: 22px;
+  letter-spacing: 4px;
+  margin: 4% 0;
+}
+/* Find Us Section */
+
+/* Footer */
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: "Nunito Sans";
+}
+
+.footer-info {
+  display: flex;
+  text-decoration: underline;
+}
+
+.footer-info p:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+/* End Footer */

@@ -1,0 +1,151 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Guru</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- HEADER SECTION -->
+    <header>
+        <nav>
+            <!-- Navbar Display Mobile -->
+            <div class="header-mobile">
+                <a href="#" onclick="openNav()"><img src="/assets/img/hamburger-menu.png" alt="hamburger-menu"></a>
+                <a href="#"><img src="/assets//img/logo-mobile.png" alt="logo-mobile" id="logo-image"></a>
+
+                <div id="main">
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="#">Home</a>
+                        <a href="#about-us">About Us</a>
+                        <a href="#features">Features</a>
+                        <a href="#find-us">Find Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navbar Display Desktop -->
+            <div class="header-desktop">
+                <div class="logo-desktop">
+                    <img src="/assets//img/logo-desktop.png" alt="logo">
+                </div>
+
+                <div class="desktop-menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li> <a href="#features">Features</a></li>
+                        <li><a href="#find-us">Find Us</a></li>
+                    </ul>
+                </div>
+
+                <button class="btn btn-signup">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Content Section -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="about-us">
+            <div class="hero-section-left">
+                <h2>Study from <br />Home with wildan</h2>
+
+                <div class="hero-desc">
+                    <p>A learning system based on formalised teaching with the help of resources.</p>
+                </div>
+
+                <div class="btn-cta">
+                    <button class="btn btn-getStarted">Get Started</button>
+                    <button class="btn btn-learnMore">Learn More</button>
+                </div>
+            </div>
+
+            <aside>
+                <div class="hero-image">
+                    <img src="/assets//img/hero-image.png" alt="hero-image">
+                </div>
+            </aside>
+
+        </section>
+        <!-- End Hero Section -->
+
+        <!-- Features Section -->
+        <article>
+            <section class="features-section" id="features">
+                <div class="feature-title">
+                    <h3>Why We Are<br />the Best</h3>
+                    <p>a learning system based on <br />formalised teaching with help of...</p>
+                </div>
+
+                <div class="features-item">
+                    <img src="/assets/img/teacher.png" alt="teacher">
+                    <h4>Expert Teacher</h4>
+                    <p>a learning system based on <br />formalised teaching </p>
+                </div>
+
+                <div class="features-item">
+                    <img src="/assets/img/online.png" alt="teacher">
+                    <h4>Online Courses</h4>
+                    <p>a learning system based on <br />formalised teaching </p>
+                </div>
+
+                <div class="features-item">
+                    <img src="/assets/img/support.png" alt="teacher">
+                    <h4>24/7 Support</h4>
+                    <p>a learning system based on <br />formalised teaching </p>
+                </div>
+            </section>
+        </article>
+        <!-- End Features Section -->
+
+        <!-- End Find Us Section -->
+        <section id="find-us" class="find-us">
+            <h3>FIND US</h3>
+            <div class="btn-find-us">
+                <input type='image' src="/assets/img/dribble.png" alt="dribble">
+                <input type='image' src="/assets/img/behance.png" alt="behance">
+                <input type='image' src="/assets/img/instagram.png" alt="instagram">
+            </div>
+            <p>wildanfaris@gmail.com</p>
+        </section>
+        <!-- Find Us Section -->
+    </main>
+
+
+    <footer>
+        <section class="footer-section">
+            <p>&copy; 2022, All right reserved.</p>
+            <div class="footer-info">
+                <p>Privacy Policy</p>
+                <p>Terms of Service</p>
+                <p>Cookies Settings</p>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Off Canvas -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "200px";
+            document.getElementById("main").style.marginLeft = "200px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+</body>
+
+</html>
